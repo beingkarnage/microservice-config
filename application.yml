@@ -1,1 +1,8 @@
-
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registery: true
+    register-with-eureka: true #by default is already true, but for my understanding
+    service-url:
+      defaultZone: http://localhost:8083/eureka #eureka service registry port
